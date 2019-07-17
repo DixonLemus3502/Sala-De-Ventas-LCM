@@ -1,0 +1,68 @@
+body{
+	background-image: url("https://wallpapersite.com/images/wallpapers/abstract-lines-1440x900-stock-yellow-green-hd-904.jpg");
+	background-size: cover;
+	background-attachment:fixed; 
+}
+
+.responsive{
+	max-width: 100%;
+	height: auto;
+	display:block;
+	margin: auto;
+}
+
+.luni{
+	border:1px solid white;
+}
+
+.menu ul{
+   list-style-type: none;
+   text-align: center;
+   padding-top: 5%;
+}
+
+.menu li{
+   display: inline;
+   text-align: center;
+}
+
+.menu li a {
+   padding: 5px 10px 5px 10px;
+   color: #fff;
+   background-color: green;
+   border: 3px solid black;
+   text-decoration: none;
+}
+
+.menu li a:hover{
+   background-color:#49FF00;
+   color: #ffffff;
+}
+
+.righter{
+	padding-right:200px; 
+}
+
+.titulo{
+	font-size:65px;
+	text-align: center;
+	font-family: Constantia;
+	-webkit-text-fill-color: green;
+	-webkit-text-stroke: 1px white;
+}
+
+.textow{
+	font-size:15px;
+	text-align: center;
+	color:#fff;
+}
+
+.texb{
+	font-size: 20px;
+	color:white;
+}
+
+.tamano{
+	height:150px; 
+	width:230px;
+}

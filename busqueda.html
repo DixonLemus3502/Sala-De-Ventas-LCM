@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="buscar">
+<head>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d8/OpenEmulator.png">
+	<link rel="stylesheet" href="lib/css/bootstrap.css">
+	<title>Sala de Ventas</title>
+</head>
+
+	<body ng-controller="busqueda">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="menu responsive">
+				<ul>
+					<li><a href="productos.html">Productos</a></li>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="info.html">Información</a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-3">
+				<br>
+				<img class="responsive"src="image/logo.png " height="125px" width="150px">
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-md-12"><h1 class="responsive titulo">BÚSQUEDA</h1></div>
+		</div>
+		<hr class="luni">
+		<div class="row">
+			<div class="col-md-5">
+				<br>
+				<input type="text" ng-model="Nombre" placeholder="Ingrese Producto">
+				<div ng-repeat="x in producto | filter:Nombre">
+					<br>
+					<img class="tamano" src="{{x.picture}}">
+					<p class="texb responsive">{{x.nom}}</p>
+					<p class="texb responsive">{{x.marca}}</p>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+	</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+		<script src="lib/js/bootstrap.js"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+</html>
